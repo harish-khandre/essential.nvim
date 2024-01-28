@@ -34,12 +34,6 @@ return {
 			vim.keymap.set("n", "<leader>cs", builtin.spell_suggest, { desc = "Spell suggest" })
 			vim.keymap.set(
 				"n",
-				"<leader>sf",
-				"<cmd>Telescope session-lens search_session<cr>",
-				{ desc = "Session finder" }
-			)
-			vim.keymap.set(
-				"n",
 				"<leader>,",
 				"<cmd>Telescope buffers sort_mru=true sort_lastused=true<cr>",
 				{ desc = "[,] Switch buffer" }

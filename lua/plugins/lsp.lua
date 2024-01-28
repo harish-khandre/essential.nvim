@@ -51,6 +51,10 @@ return {
 			capabilities = capabilities, -- Added missing comma here
 			on_attach = on_attach,
 		})
+		lspconfig.tsserver.setup({
+			capabilities = capabilities, -- Added missing comma here
+			on_attach = on_attach,
+		})
 		lspconfig.gopls.setup({
 			capabilities = capabilities, -- Added missing comma here
 			on_attach = on_attach,
