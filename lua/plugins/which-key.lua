@@ -14,6 +14,7 @@ return {
 			-- ["<leader>s"] = { name = "[S]essions", _ = "which_key_ignore" },
 			["<leader>i"] = { name = "[I]interface", _ = "which_key_ignore" },
 			["<leader>q"] = { name = "[Q]uickFix", _ = "which_key_ignore" },
+			["<leader>l"] = { name = "[L]sp", _ = "which_key_ignore" },
 			-- ["<leader>a"] = { name = "[A]round", _ = "which_key_ignore" },
 			["<leader>rs"] = { name = "[S]pecter", _ = "which_key_ignore" },
 		})

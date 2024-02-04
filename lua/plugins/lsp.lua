@@ -13,6 +13,11 @@ return {
 		local on_attach = function(client, bufnr)
 			opts.buffer = bufnr
 
+			if client.server_capabilities.colorProvider then
+				-- Attach document colour support
+				require("document-color").buf_attach(bufnr)
+			end
+
 			-- set keybinds
 			opts.desc = "Show LSP references"
 			keymap.set("n", "<leader>gr", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
@@ -51,6 +56,10 @@ return {
 		end
 
 		local capabilities = cmp_nvim_lsp.default_capabilities()
+
+		capabilities.textDocument.colorProvider = {
+			dynamicRegistration = true,
+		}
 		lspconfig.lua_ls.setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
