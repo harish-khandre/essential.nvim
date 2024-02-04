@@ -38,8 +38,16 @@ return {
 			opts.desc = "Show documentation for what is under cursor"
 			keymap.set("n", "K", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
 
-			opts.desc = "Restart LSP"
-			keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
+			opts.desc = "LSP Info"
+			keymap.set("n", "<leader>li", ":LspInfo<CR>", opts) -- mapping to restart lsp if necessary
+			opts.desc = "LSP Restart"
+			keymap.set("n", "<leader>lr", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
+			opts.desc = "LSP Stop"
+			keymap.set("n", "<leader>ls", ":LspStop<CR>", opts) -- mapping to restart lsp if necessary
+			opts.desc = "Mason"
+			keymap.set("n", "<leader>lm", ":Mason<CR>", opts) -- mapping to restart lsp if necessary
+			opts.desc = "Lazy"
+			keymap.set("n", "<leader>ll", ":Lazy<CR>", opts) -- mapping to restart lsp if necessary
 		end
 
 		local capabilities = cmp_nvim_lsp.default_capabilities()
@@ -55,10 +63,10 @@ return {
 			capabilities = capabilities, -- Added missing comma here
 			on_attach = on_attach,
 		})
-		lspconfig.gopls.setup({
+		--[[ lspconfig.gopls.setup({
 			capabilities = capabilities, -- Added missing comma here
 			on_attach = on_attach,
-		})
+		}) ]]
 		lspconfig.tailwindcss.setup({
 			capabilities = capabilities, -- Added missing comma here
 			on_attach = on_attach,

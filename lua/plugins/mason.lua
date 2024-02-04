@@ -35,7 +35,7 @@ return {
 				"graphql",
 				"emmet_ls",
 				"prismals",
-				"gopls",
+				-- "gopls",
 				"tsserver",
 			},
 			-- auto-install configured servers (with lspconfig)
