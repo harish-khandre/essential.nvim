@@ -7,17 +7,15 @@ return {
 		},
 		config = function()
 			require("telescope").setup({
-				--[[ pickers = {
-					find_files = {
-						theme = "dropdown",
+				defaults = {
+					file_ignore_patterns = {
+						"node_modules",
+						"build",
+						"dist",
+						"yarn.lock",
+						".git",
 					},
-					live_grep = {
-						theme = "dropdown",
-					},
-					help_tags = {
-						theme = "dropdown",
-					},
-				}, ]]
+				},
 			})
 			local builtin = require("telescope.builtin")
 			vim.keymap.set("n", "<leader><space>", builtin.find_files, { desc = "[F]ind files" })

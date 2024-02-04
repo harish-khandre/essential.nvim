@@ -3,7 +3,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>di", vim.diagnostic.open_float, { desc = "Diagnostic info" })
 vim.keymap.set("n", "<leader>dl", vim.diagnostic.setloclist, { desc = "Diagnostic set loclist" })
 vim.keymap.set("n", "<leader>bd", "<cmd>bd<cr><esc>", { desc = "Delete buffer " })
-vim.keymap.set("n", "<leader>rw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "[W]ord" })
+vim.keymap.set("n", "<leader>ra", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "[W]ord" })
 vim.keymap.set("n", "<leader>qo", "<cmd>copen<cr>", { desc = "[Q]uickfix window" })
 vim.keymap.set("n", "<leader>qc", "<cmd>ccl<cr>", { desc = "[Q]uickfix close" })
 vim.keymap.set("n", "<leader>qe", "<cmd>cw<cr>", { desc = "open if errors" })
@@ -36,30 +36,3 @@ vim.keymap.set("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase window he
 vim.keymap.set("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
 vim.keymap.set("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
 vim.keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
-
-vim.opt.expandtab = true
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-
-vim.opt.incsearch = true
-vim.opt.hlsearch = false
-vim.opt.clipboard = "unnamedplus"
-vim.opt.termguicolors = true
-
-vim.opt.wrap = true
-vim.opt.breakindent = true
-vim.opt.linebreak = true
-vim.opt.wrapmargin = 2
-vim.opt.smartindent = true
-
-vim.opt.scrolloff = 8
-vim.opt.updatetime = 50
-vim.opt.cursorline = true
-vim.opt.spelllang = { "en" }
-vim.opt.spell = true
-
-vim.opt.relativenumber = true
-vim.opt.number = true
-
-vim.g.netrw_banner = 0
