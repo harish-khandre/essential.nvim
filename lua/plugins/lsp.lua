@@ -64,6 +64,10 @@ return {
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
+		lspconfig.yamlls.setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
 		lspconfig.biome.setup({
 			capabilities = capabilities, -- Added missing comma here
 			on_attach = on_attach,
