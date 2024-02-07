@@ -17,6 +17,8 @@ return {
 			["<leader>l"] = { name = "[L]sp", _ = "which_key_ignore" },
 			-- ["<leader>a"] = { name = "[A]round", _ = "which_key_ignore" },
 			["<leader>rs"] = { name = "[S]pecter", _ = "which_key_ignore" },
+
+			["<leader>u"] = { name = "[U]ndo Tree", _ = "which_key_ignore" },
 		})
 	end,
 }
