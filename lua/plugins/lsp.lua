@@ -45,12 +45,16 @@ return {
 
 			opts.desc = "LSP Info"
 			keymap.set("n", "<leader>li", ":LspInfo<CR>", opts) -- mapping to restart lsp if necessary
+
 			opts.desc = "LSP Restart"
 			keymap.set("n", "<leader>lr", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
+
 			opts.desc = "LSP Stop"
 			keymap.set("n", "<leader>ls", ":LspStop<CR>", opts) -- mapping to restart lsp if necessary
+
 			opts.desc = "Mason"
 			keymap.set("n", "<leader>lm", ":Mason<CR>", opts) -- mapping to restart lsp if necessary
+
 			opts.desc = "Lazy"
 			keymap.set("n", "<leader>ll", ":Lazy<CR>", opts) -- mapping to restart lsp if necessary
 		end
@@ -76,10 +80,10 @@ return {
 			capabilities = capabilities, -- Added missing comma here
 			on_attach = on_attach,
 		})
-		--[[ lspconfig.gopls.setup({
+		lspconfig.gopls.setup({
 			capabilities = capabilities, -- Added missing comma here
 			on_attach = on_attach,
-		}) ]]
+		})
 		lspconfig.tailwindcss.setup({
 			capabilities = capabilities, -- Added missing comma here
 			on_attach = on_attach,

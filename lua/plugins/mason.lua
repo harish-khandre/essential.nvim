@@ -27,7 +27,7 @@ return {
 				"graphql",
 				"emmet_ls",
 				"prismals",
-				-- "gopls",
+				"gopls",
 				"tsserver",
 				"yamlls",
 			},
@@ -42,7 +42,6 @@ return {
 				"golangci-lint", -- python linter
 				"eslint_d", -- js linter
 				"goimports-reviser",
-				"biome",
 				"shfmt",
 			},
 		})
