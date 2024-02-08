@@ -14,7 +14,7 @@ vim.opt.linebreak = true
 vim.opt.wrapmargin = 2
 vim.opt.smartindent = true
 
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 10
 vim.opt.updatetime = 50
 vim.opt.cursorline = true
 vim.opt.spelllang = { "en" }
