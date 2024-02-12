@@ -14,7 +14,11 @@ return {
 		local mason_tool_installer = require("mason-tool-installer")
 
 		-- enable mason and configure icons
-		mason.setup({})
+		mason.setup({
+			ui = {
+				border = "rounded",
+			},
+		})
 
 		mason_lspconfig.setup({
 			-- list of servers for mason to install
@@ -43,6 +47,7 @@ return {
 				"eslint_d", -- js linter
 				"goimports-reviser",
 				"shfmt",
+				"biome",
 			},
 		})
 	end,
