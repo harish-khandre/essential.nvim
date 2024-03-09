@@ -2,6 +2,7 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
+vim.o.undotree = true
 
 vim.opt.incsearch = true
 vim.opt.hlsearch = false
