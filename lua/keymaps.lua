@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 
+vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set("n", "<leader>di", vim.diagnostic.open_float, { desc = "Diagnostic info" })
 vim.keymap.set("n", "<leader>dl", vim.diagnostic.setloclist, { desc = "Diagnostic set loclist" })
 vim.keymap.set("n", "<leader>bd", "<cmd>bd<cr><esc>", { desc = "Delete buffer " })
